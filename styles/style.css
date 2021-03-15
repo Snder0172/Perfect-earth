@@ -135,6 +135,12 @@ article > a.themeBtn{
   text-align: center;
 }
 
+footer{
+  background: purple;
+  margin-top: 1px;
+  padding: 50px 0;
+}
+
 nav{
   position: absolute;
   bottom: 0;
