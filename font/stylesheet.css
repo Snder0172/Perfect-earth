@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Dumadi - Perfect Earth';
+    src: url('Dumadi-PerfectEarth-Regular.eot');
+    src: url('Dumadi-PerfectEarth-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Dumadi-PerfectEarth-Regular.woff2') format('woff2'),
+        url('Dumadi-PerfectEarth-Regular.woff') format('woff'),
+        url('Dumadi-PerfectEarth-Regular.ttf') format('truetype'),
+        url('Dumadi-PerfectEarth-Regular.svg#Dumadi-PerfectEarth-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
