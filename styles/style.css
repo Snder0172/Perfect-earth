@@ -79,6 +79,7 @@ section{
   text-align: center;
   padding: 0 20px;
   max-width: 760px;
+  margin-bottom: 60px;
 }
 
 section:nth-of-type(2){
