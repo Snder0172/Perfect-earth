@@ -76,7 +76,6 @@ main{
 }
 
 section{
-  text-align: center;
   padding: 0 20px;
   max-width: 760px;
   margin-bottom: 60px;
@@ -139,12 +138,37 @@ footer{
   background: purple;
   margin-top: 1px;
   padding: 50px 0;
+  text-align: center;
 }
 
 nav{
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  height: 10em;
-  background: purple;
+  background: #76BD24;
   width: 100%;
+  padding: 10px 0;
+  z-index: 10;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+nav ul li{
+  width: calc(100%/6);
+  text-align: center;
+}
+
+nav ul li a{
+  font-family: 'Dumadi - Perfect Earth', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
