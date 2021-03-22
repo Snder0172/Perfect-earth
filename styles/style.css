@@ -93,7 +93,7 @@ header > div{
 
 header > div > h1{
   font-size: 28px;
-  color: purple;
+  color: #701D78;
 }
 
 a.logo-btn{
@@ -125,11 +125,11 @@ div.background-wave{
 }
 
 div.background-wave > svg{
-  fill: purple !important;
+  fill: #701D78 !important;
 }
 
 main{
-  background: purple;
+  background: #701D78;
   padding: 60px 0;
   display: grid;
   position: relative;
@@ -286,6 +286,25 @@ article > a.themeBtn{
   text-align: center;
 }
 
+article:nth-child(2) > a.themeBtn:hover{
+  background: #FFF101;
+  color: black;
+}
+article:nth-child(3) > a.themeBtn:hover{
+  background: #00B8E0;
+  color: black;
+}
+article:nth-child(4) > a.themeBtn:hover{
+  background: #A45A21;
+  color: black;
+}
+article:nth-child(5) > a.themeBtn:hover{
+  background: #602A7A;
+}
+article:nth-child(6) > a.themeBtn:hover{
+  background: #137C37;
+}
+
 /*      MEDIA QUERY 400px - 579px     */
 /*      Article > a.themeBtn          */
 /* ---------------------------------- */
@@ -314,7 +333,7 @@ article > a.themeBtn{
 }
 
 footer{
-  background: purple;
+  background: #701D78;
   margin-top: 1px;
   text-align: center;
   margin-bottom: 100px;
