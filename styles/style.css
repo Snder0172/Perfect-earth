@@ -7,22 +7,18 @@
 
 @font-face {
   font-family: 'Dumadi - Perfect Earth';
-  src: url('Dumadi-PerfectEarth-Regular.eot');
-  src: url('Dumadi-PerfectEarth-Regular.eot?#iefix') format('embedded-opentype'),
-      url('Dumadi-PerfectEarth-Regular.woff2') format('woff2'),
-      url('Dumadi-PerfectEarth-Regular.woff') format('woff'),
-      url('Dumadi-PerfectEarth-Regular.ttf') format('truetype'),
-      url('Dumadi-PerfectEarth-Regular.svg#Dumadi-PerfectEarth-Regular') format('svg');
+  src: url('../font/Dumadi-PerfectEarth-Regular.eot');
+  src: url('../font/Dumadi-PerfectEarth-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../font/Dumadi-PerfectEarth-Regular.woff2') format('woff2'),
+      url('../font/Dumadi-PerfectEarth-Regular.woff') format('woff'),
+      url('../font/Dumadi-PerfectEarth-Regular.ttf') format('truetype'),
+      url('../font/Dumadi-PerfectEarth-Regular.svg#Dumadi-PerfectEarth-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 a{text-decoration: none; list-style-type: none;}
-
-body{
-  margin-bottom: ;
-}
 
 h1{
   font-family: 'Dumadi - Perfect Earth', sans-serif;
@@ -69,22 +65,67 @@ p{
 }
 
 header{
+  height: 90vh;
+  background: url(../images/Tussenfase_POSTER\ A1.png);
+  background-position: center;
+  background-size: cover;
   display: flex;
   justify-content: center;
-  background: #76BD24;
+  align-items: center;
+  padding: 0 20px;
 }
 
-header > img{
-  height: 100vh;
+header > div{
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 465px;
+}
+
+header > div > h1{
+  font-size: 28px;
+  color: purple;
+}
+
+a.logo-btn{
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  z-index: 1000;
+}
+
+a.poster-btn{
+  border-radius: 50px;
+  font-family: 'Dumadi - Perfect Earth', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  color: white;
+  background: #D41367;
+  text-align: center;
+  position: fixed;
+  padding: 15px 15px 12px 15px;
+  right: 20px;
+  top: 46px;
+  z-index: 1000;
+}
+
+div.background-wave{
+  overflow-x: hidden;
+  margin-top: -10vh;
+}
+
+div.background-wave > svg{
+  fill: purple !important;
 }
 
 main{
   background: purple;
   padding: 60px 0;
   display: grid;
-  margin-top: -10vh;
   position: relative;
   z-index: 10;
+  margin-top: -11px;
 }
 
 section{
@@ -282,7 +323,7 @@ nav{
   background-position: center 149px;
   width: 100%;
   padding: 10px 0;
-  z-index: 20;
+  z-index: 1000;
   height: 100px;
 }
 
