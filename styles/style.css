@@ -406,12 +406,14 @@ nav ul li a{
   }
 }
 
+nav ul li a:hover{color: black;}
+
 nav ul li a.bijen:hover,
 nav ul li a.vogels:hover,
 nav ul li a.bodemleven:hover,
 nav ul li a.bloemen:hover,
 nav ul li a.producten:hover{
-  background-position-y: 0;
+  background-position-y: 10px;
 }
 
 a.bijen{
