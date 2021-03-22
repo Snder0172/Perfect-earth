@@ -388,6 +388,24 @@ nav ul li a{
   margin-top: -30px;
 }
 
+/*      MEDIA QUERY 460 and bigger    */
+/*      Nav > ul > li > a             */
+/* ---------------------------------- */
+@media only screen and (min-width: 460px){
+  nav ul li a{
+    font-size: 20px;
+  }
+}
+
+/*      MEDIA QUERY 730px and bigger  */
+/*      Nav > ul > li > a             */
+/* ---------------------------------- */
+@media only screen and (min-width: 730px){
+  nav ul li a{
+    font-size: 26px;
+  }
+}
+
 nav ul li a.bijen:hover,
 nav ul li a.vogels:hover,
 nav ul li a.bodemleven:hover,
@@ -435,43 +453,43 @@ a.producten{
 /* Active states themepagina's */
 /* Voeg deze classes toe bij de bijbehorende themepagina's */
 .bijenactive{
-  background: url(../images/activeBijen.png);
-  background-size: 80px 80px;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 0;
+  background: url(../images/activeBijen.png) !important;
+  background-size: 60px 60px !important;
+  background-repeat: no-repeat !important;
+  background-position-x: center !important;
+  background-position-y: 10px !important;
 }
 
 .vogelsactive{
-  background: url(../images/activeVogels.png);
-  background-size: 80px 80px;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 0;
+  background: url(../images/activeVogels.png) !important;
+  background-size: 60px 60px !important;
+  background-repeat: no-repeat !important;
+  background-position-x: center !important;
+  background-position-y: 10px !important;
 }
 
 .bodemlevenactive{
-  background: url(../images/activeBodemleven.png);
-  background-size: 80px 80px;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 0;
+  background: url(../images/activeBodemleven.png) !important;
+  background-size: 60px 60px !important;
+  background-repeat: no-repeat !important;
+  background-position-x: center !important;
+  background-position-y: 10px !important;
 }
 
 .bloemenactive{
-  background: url(../images/activeBloemen.png);
-  background-size: 80px 80px;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 0;
+  background: url(../images/activeBloemen.png) !important;
+  background-size: 60px 60px !important;
+  background-repeat: no-repeat !important;
+  background-position-x: center !important;
+  background-position-y: 10px !important;
 }
 
 .productenactive{
-  background: url(../images/activeProducten.png);
-  background-size: 80px 80px;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 0;
+  background: url(../images/activeProducten.png) !important;
+  background-size: 60px 60px !important;
+  background-repeat: no-repeat !important;
+  background-position-x: center !important;
+  background-position-y: 10px !important;
 }
 
 
