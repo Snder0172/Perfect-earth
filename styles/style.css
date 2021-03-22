@@ -131,8 +131,7 @@ main{
 section{
   padding: 0 20px;
   max-width: 1024px;
-  margin-bottom: 60px;
-  margin: 0 auto;
+  margin: 0 auto 60px;
 }
 
 section:nth-of-type(2){
@@ -308,12 +307,32 @@ article > a.themeBtn{
 footer{
   background: purple;
   margin-top: 1px;
-  padding: 50px 0;
   text-align: center;
+  margin-bottom: 100px;
 }
 
-footer > div:nth-child(2){
+footer > div{
+  padding: 60px 0;
+}
+
+footer > div.partners{
   background: white;
+}
+
+footer > div.partners > p{
+  font-size: 14px;
+  color: black;
+}
+
+footer > div.partners > div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > div.partners > div > a{
+  margin: 20px 10px 0 10px;
 }
 
 nav{
