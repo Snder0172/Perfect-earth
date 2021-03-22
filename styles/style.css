@@ -347,18 +347,16 @@ nav{
 }
 
 nav ul{
-  max-width: 730px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   list-style-type: none;
-  position: relative;
-  margin: 0 auto;
 }
 
 nav ul li{
-  min-width: 64px;
-  text-align: center;
+  display: inline-block;
+  width: 100px;
+  margin-top: -10px
 }
 
 nav ul li a{
@@ -366,24 +364,40 @@ nav ul li a{
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  color: white;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  position: relative;
+  color: black;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  padding-top: 80px
 }
 
-nav ul li a > img{
-  margin-top: 0;
+a.bijen{
+  background: url(../images/nav_bijen.png);
+  background-size: 72px 72px;
+  background-repeat: no-repeat;
+  background-position: top center;;
 }
-
-nav ul li a:hover > img{
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  padding: 10px;
-  width: 60px;
-  height: 60px;
-  top: -10px;
-  position: absolute;
+a.vogels{
+  background: url(../images/nav_vogels.png);
+  background-size: 72px 72px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+a.bodemleven{
+  background: url(../images/nav_bodemleven.png);
+  background-size: 72px 72px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+a.bloemen{
+  background: url(../images/nav_bloemen.png);
+  background-size: 72px 72px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+a.producten{
+  background: url(../images/nav_producten.png);
+  background-size: 72px 72px;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
