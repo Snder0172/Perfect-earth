@@ -75,6 +75,15 @@ header{
   padding: 0 20px;
 }
 
+/*      MEDIA QUERY 465px and bigger  */
+/*      Header                        */
+/* ---------------------------------- */
+@media only screen and (min-width: 466px){
+  header{
+    justify-content: left;
+  }
+}
+
 header > div{
   background: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
@@ -350,6 +359,7 @@ nav{
 
 nav ul{
   max-width: 730px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -358,8 +368,10 @@ nav ul{
 
 nav ul li{
   display: inline-block;
-  width: 100px;
   height: 120px;
+  min-width: 64px;
+  max-width: calc(730px/5);
+  width: 100%;
 }
 
 nav ul li a{
@@ -367,7 +379,7 @@ nav ul li a{
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  color: black;
+  color: white;
   width: 100%;
   text-align: center;
   display: inline-block;
@@ -385,39 +397,39 @@ nav ul li a.producten:hover{
 }
 
 a.bijen{
-  background: url(../images/activeBijen.png);
-  background-size: 80px 80px;
+  background: url(../images/nav_bijen.png);
+  background-size: 55px 55px;
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: 0;
+  background-position-y: 20px;
 }
 a.vogels{
   background: url(../images/nav_vogels.png);
-  background-size: 72px 72px;
+  background-size: 55px 55px;
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: 10px;
+  background-position-y: 20px;
 }
 a.bodemleven{
   background: url(../images/nav_bodemleven.png);
-  background-size: 72px 72px;
+  background-size: 55px 55px;
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: 10px;
+  background-position-y: 20px;
 }
 a.bloemen{
   background: url(../images/nav_bloemen.png);
-  background-size: 72px 72px;
+  background-size: 55px 55px;
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: 10px;
+  background-position-y: 20px;
 }
 a.producten{
   background: url(../images/nav_producten.png);
-  background-size: 72px 72px;
+  background-size: 55px 55px;
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: 10px;
+  background-position-y: 20px;
 }
 
 /* Active states themepagina's */
@@ -461,3 +473,144 @@ a.producten{
   background-position-x: center;
   background-position-y: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* nav{
+  position: fixed;
+  bottom: 0;
+  background: url(../images/grass.png);
+  background-position: center 149px;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 1000;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul{
+  max-width: 730px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+nav ul li{
+  display: inline-block;
+  height: 120px;
+  width: 64px;
+}
+
+nav ul li a{
+  font-family: 'Dumadi - Perfect Earth', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  color: white;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  padding-top: 80px;
+  height: 150px;
+  margin-top: -30px;
+}
+
+nav ul li a.bijen:hover,
+nav ul li a.vogels:hover,
+nav ul li a.bodemleven:hover,
+nav ul li a.bloemen:hover,
+nav ul li a.producten:hover{
+  background-position-y: 0;
+}
+
+a.bijen{
+  background: url(../images/nav_bijen.png);
+  background-size: 72px 72px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 10px;
+}
+a.vogels{
+  background: url(../images/nav_vogels.png);
+  background-size: 72px 72px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 10px;
+}
+a.bodemleven{
+  background: url(../images/nav_bodemleven.png);
+  background-size: 72px 72px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 10px;
+}
+a.bloemen{
+  background: url(../images/nav_bloemen.png);
+  background-size: 72px 72px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 10px;
+}
+a.producten{
+  background: url(../images/nav_producten.png);
+  background-size: 72px 72px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 10px;
+}
+
+/* Active states themepagina's */
+/* Voeg deze classes toe bij de bijbehorende themepagina's */
+
+/* .bijenactive{
+  background: url(../images/activeBijen.png);
+  background-size: 80px 80px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 0;
+}
+
+.vogelsactive{
+  background: url(../images/activeVogels.png);
+  background-size: 80px 80px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 0;
+}
+
+.bodemlevenactive{
+  background: url(../images/activeBodemleven.png);
+  background-size: 80px 80px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 0;
+}
+
+.bloemenactive{
+  background: url(../images/activeBloemen.png);
+  background-size: 80px 80px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 0;
+}
+
+.productenactive{
+  background: url(../images/activeProducten.png);
+  background-size: 80px 80px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 0;
+} */ */
