@@ -37,23 +37,11 @@ h2{
 }
 
 h3{
-  font-family: "Merriweather Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 1.375em;
+  font-family: 'Dumadi - Perfect Earth', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
   font-style: normal;
-  line-height: 1.27273em;
-  margin-bottom: 0.5454545455em;
-  color: #00263D;
-  margin-bottom: .5em;
-}
-
-h3{
-  font-family: "Merriweather Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 1.125em;
-  font-style: normal;
-  line-height: 1.27273em;
-  margin-bottom: 0.5454545455em;
-  color: #00263D;
-  margin-bottom: .5em;
+  color: #000;
 }
 
 p{
@@ -62,9 +50,10 @@ p{
   line-height: 1.5;
   font-weight: 400;
   color: #D4BBD6;
+  margin-bottom: 20px;
 }
 
-header{
+body > header{
   height: 90vh;
   background: url(../images/Tussenfase_POSTER\ A1.png);
   background-position: center;
@@ -103,6 +92,16 @@ a.logo-btn{
   z-index: 1000;
 }
 
+/*      MEDIA QUERY 580px and bigger  */
+/*      Article                       */
+/* ---------------------------------- */
+@media only screen and (max-width: 480px){
+  a.logo-btn > img{
+    width: 100px;
+    height: auto;
+  }
+}
+
 a.poster-btn{
   border-radius: 50px;
   font-family: 'Dumadi - Perfect Earth', sans-serif;
@@ -119,13 +118,13 @@ a.poster-btn{
   z-index: 1000;
 }
 
+a.poster-btn:hover{
+  background: #701D78;;
+}
+
 div.background-wave{
   overflow-x: hidden;
   margin-top: -10vh;
-}
-
-div.background-wave > svg{
-  fill: #701D78 !important;
 }
 
 main{
@@ -231,7 +230,7 @@ article:first-child{
 /*      Article:first-child           */
 /* ---------------------------------- */
 @media only screen and (max-width: 825px) and (min-width: 580px){
-  article:first-child{
+  section > article:first-child{
     grid-column: 1 / -1;
   }
 }
@@ -336,7 +335,7 @@ footer{
   background: #701D78;
   margin-top: 1px;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 65px;
 }
 
 footer > div{
@@ -513,143 +512,167 @@ a.producten{
   background-position-y: 10px !important;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* nav{
-  position: fixed;
-  bottom: 0;
-  background: url(../images/grass.png);
-  background-position: center 149px;
-  width: 100%;
-  padding: 10px 0;
-  z-index: 1000;
-  height: 100px;
+/* themapagina algemeen */
+header.theme-page{
+  background: none;
   display: flex;
   justify-content: center;
 }
 
-nav ul{
-  max-width: 730px;
+header > div.theme-header{
+  max-width: 980px;
+  background: none;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  list-style-type: none;
+  flex-wrap: wrap;
 }
 
-nav ul li{
-  display: inline-block;
-  height: 120px;
-  width: 64px;
+/*      MEDIA QUERY 700px and bigger  */
+/*      Aside                         */
+/* ---------------------------------- */
+@media only screen and (min-width: 700px){
+  header > div.theme-header{
+    flex-wrap: nowrap;
+  }
 }
 
-nav ul li a{
+header > div.theme-header > div{
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/*      MEDIA QUERY 700px and bigger  */
+/*      Aside                         */
+/* ---------------------------------- */
+@media only screen and (min-width: 700px){
+  header > div.theme-header > div:last-child{
+    text-align: left;
+  }
+}
+
+header > div.theme-header > div > img{width: 200px;}
+
+/*      MEDIA QUERY 460 and bigger    */
+/*      Nav > ul > li > a             */
+/* ---------------------------------- */
+@media only screen and (min-width: 460px){
+  header > div.theme-header > div > img{
+    width: 300px;
+  }
+}
+
+header > div.theme-header > div > h1,
+header > div.theme-header > div > p{
+  color: black;
+}
+
+aside{
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 920px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 20px;
+}
+
+/*      MEDIA QUERY 580px and bigger  */
+/*      Aside                         */
+/* ---------------------------------- */
+@media only screen and (min-width: 400px){
+  aside{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*      MEDIA QUERY 580px and bigger  */
+/*      Aside                         */
+/* ---------------------------------- */
+@media only screen and (min-width: 700px){
+  aside{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+aside > article{
+  background: white;
+  text-align: center;
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 370px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 300px;
+  margin-top: 60px;
+}
+
+aside > article:first-child{
+  background: none;
+  text-align: left;
+  border-radius: 0;
+  padding: 0;
+  min-height: unset;
+}
+
+@media only screen and (max-width: 699px) and (min-width: 400px){
+  aside > article:first-child{
+    grid-column: 1 / -1;
+  }
+}
+
+aside > article > header{
+  height: 250px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+aside > article > header > svg{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* Bijenpagina */
+#bijen{
+  background: #FFFBCC;
+}
+
+main.bijen{
+  background: #FFF101;
+}
+
+main.bijen > section{
+  max-width: 700px;
+  text-align: center;
+}
+
+main.bijen > section > h1{color: #000000; margin-bottom: 20px;}
+main.bijen > section > p{color: #000000}
+
+a.cta{
+  border-radius: 50px;
   font-family: 'Dumadi - Perfect Earth', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   color: white;
-  width: 100%;
+  background: #000000;
   text-align: center;
-  display: inline-block;
-  padding-top: 80px;
-  height: 150px;
-  margin-top: -30px;
+  padding: 15px 35px 12px 35px;
+  margin-top: 20px;
 }
 
-nav ul li a.bijen:hover,
-nav ul li a.vogels:hover,
-nav ul li a.bodemleven:hover,
-nav ul li a.bloemen:hover,
-nav ul li a.producten:hover{
-  background-position-y: 0;
+main.bijen > section:last-child{
+  max-width: 900px;
+  display: grid;
 }
 
-a.bijen{
-  background: url(../images/nav_bijen.png);
-  background-size: 72px 72px;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 10px;
-}
-a.vogels{
-  background: url(../images/nav_vogels.png);
-  background-size: 72px 72px;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 10px;
-}
-a.bodemleven{
-  background: url(../images/nav_bodemleven.png);
-  background-size: 72px 72px;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 10px;
-}
-a.bloemen{
-  background: url(../images/nav_bloemen.png);
-  background-size: 72px 72px;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 10px;
-}
-a.producten{
-  background: url(../images/nav_producten.png);
-  background-size: 72px 72px;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 10px;
-}
+main.bijen > aside > article > div > h2{color: #000000; margin-bottom: 20px;}
+main.bijen > aside > article > div > p{color: #000000};
 
-/* Active states themepagina's */
-/* Voeg deze classes toe bij de bijbehorende themepagina's */
-
-/* .bijenactive{
-  background: url(../images/activeBijen.png);
-  background-size: 80px 80px;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 0;
-}
-
-.vogelsactive{
-  background: url(../images/activeVogels.png);
-  background-size: 80px 80px;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 0;
-}
-
-.bodemlevenactive{
-  background: url(../images/activeBodemleven.png);
-  background-size: 80px 80px;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 0;
-}
-
-.bloemenactive{
-  background: url(../images/activeBloemen.png);
-  background-size: 80px 80px;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 0;
-}
-
-.productenactive{
-  background: url(../images/activeProducten.png);
-  background-size: 80px 80px;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 0;
-} */ */
+/* aside > article > header.card-header-bijen{
+  background: url(../images/bijenmagazine.png);
+  background-position: top;
+  background-size: cover;
+} */
